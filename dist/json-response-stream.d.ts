@@ -1,0 +1,10 @@
+export declare const MAX_JSON_TOOL_NAME_BYTES = 64;
+export declare const MAX_JSON_STRING_BYTES: number;
+export declare const MAX_JSON_NUMBER_BYTES = 128;
+export declare const MAX_JSON_DEPTH = 256;
+export declare const MAX_JSON_OBJECT_KEYS = 100000;
+export declare const MAX_JSON_RETAINED_KEY_BYTES: number;
+export declare const MAX_JSON_NODES = 100000;
+export declare const MAX_JSON_PENDING_BLOCK_BYTES: number;
+export declare function assertWellFormedUtf16(value: string): void;
+export declare function createBoundedJsonToolNameStream(body: ReadableStream<Uint8Array>, toolPrefix: string, rewriteName: (name: string) => string | undefined): ReadableStream<Uint8Array>;
